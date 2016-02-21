@@ -1,0 +1,179 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin .form-settings {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-settings:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*
+ * Table
+ * --------------------------------------------------
+ */
+div.table {
+  display:table;
+}
+div.table .row {
+  display:table-row;
+}
+div.table .row div.cell {
+  display:table-cell;
+  padding:0 4px 0 4px;
+  vertical-align:middle;
+}
+div.table.default {
+  border-width:1px 1px 0px 0px;
+  border-style:solid solid none none;
+  border-color:rgb(200,200,200);
+  width:100%;
+}
+div.table.default .row.head {
+  background-color:rgb(40, 40, 40);
+  background-image:linear-gradient(to bottom, rgb(40, 40, 40) 0%, rgb(60, 60, 60) 100%);
+  color:rgb(255,255,255);
+}
+div.table.default .row.head a {
+  color:rgb(200,200,200);
+}
+div.table.default .row.head a.active {
+  color:rgb(22,159,230);
+}
+div.table.default .row.head a:hover {
+  color:rgb(255,255,255);
+}
+div.table.default .row div.cell {
+  border-width:0px 0px 1px 1px;
+  border-style:none none solid solid;
+  border-color:rgb(200,200,200);
+}
+div.table.default p {
+  border-width:0px 1px 1px 1px;
+  border-style:none solid solid solid;
+  border-color:rgb(200,200,200);
+}
+div.table .row.cont1 {
+  background-color:rgb(240,240,240);
+}
+div.table .row.blank {
+  height: 10px;
+}
+div.table.offer {
+  border-width:1px 1px 0px 0px;
+  border-style:solid solid none none;
+  border-color:rgb(234,234,234);
+  width:100%;
+}
+div.table.offer > .row > div.cell {
+  border-width:0px 0px 1px 1px;
+  border-style:none none solid solid;
+  border-color:rgb(234,234,234);
+}
+div.table.bottom {
+  width:100%;
+}
+div.table.bottom .row div.cell {
+  border-bottom:1px solid rgb(200,200,200);
+}
