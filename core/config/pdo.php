@@ -24,9 +24,9 @@
  */
 
 // Define configuration
-define("DB_HOST", "localhost");
-define("DB_USER", "nachhilfe");
-define("DB_PASS", "?7L&Wwn@vY3urka");
-define("DB_NAME", "nachhilfe");
+define("DB_HOST", "server");
+define("DB_USER", "user");
+define("DB_PASS", "passwort");
+define("DB_NAME", "datenbank");
 
 ?>
